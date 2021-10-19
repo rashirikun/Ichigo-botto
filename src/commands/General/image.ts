@@ -33,3 +33,4 @@ var random =  gugIm[Math.floor(Math.random() * gugIm.length)].url
             .catch((reason: Error) => M.reply(`❌ an error occupered, Reason: ${reason}`))
     }
 }
+}
