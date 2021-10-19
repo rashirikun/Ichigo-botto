@@ -30,7 +30,9 @@ var gugIm = result
 var random =  gugIm[Math.floor(Math.random() * gugIm.length)].url
         this.client
             .sendMessage(M.from,random, MessageType.image, {quoted: M.WAMessage})
+}
+}
             .catch((reason: Error) => M.reply(`❌ an error occupered, Reason: ${reason}`))
     }
-}
-}
+    }
+
