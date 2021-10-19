@@ -65,7 +65,6 @@
     "ultra-lyrics": "^1.0.3",
     "wa-sticker-formatter": "^4.0.14",
     "yt-search": "^2.9.0",
-    "ytdl-core": "^4.9.1",
-    "g-i-s": "^2.1.6"
+    "ytdl-core": "^4.9.1"
   }
 }
