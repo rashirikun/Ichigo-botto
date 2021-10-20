@@ -18,17 +18,16 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/images/ichi/ichigo2.mp4'
+            './assets/images/ichi/arin.mp4','./assets/images/ichi/arin2.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         const mn=`
-🪆Konichiwa! *${M.sender.username}* , I'm *Ichigo-botto*
+🪆ᴋᴏɴɪᴄʜɪᴡᴀ! ${ᴍ.sᴇɴᴅᴇʀ.ᴜsᴇʀɴᴀᴍᴇ} , ɪ'ᴍ 𝙼𝚊𝚒-𝚂𝚊𝚗
+ᴇɴᴊᴏʏ ᴜsɪɴɢ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs....
 
-*Enjoy using my commands....*
+📜ʜᴇʀᴇ ᴀʀᴇ ᴛʜᴇ ʟɪsᴛᴇᴅ ᴄᴏᴍᴍᴀɴᴅs : -
 
-📜Here are the listed commands : -
-
-🎊 *FUN* 🎊
+🎊 ғᴜɴ 🎊
 
 🔖 ғᴀᴄᴛ  
 🔖 ǫᴜᴏᴛᴇ
@@ -36,8 +35,9 @@ export default class Command extends BaseCommand {
 🔖 ᴡʜʏ
 🔖 ᴊᴏᴋᴇ        
 🔖 ᴛʀɪɢɢᴇʀ
+🔖 sʜɪᴘ
 
-⛩️ *WEEB* ⛩️
+⛩️ ᴡᴇᴇʙ ⛩️
 
 🏷️ᴡᴀɪғᴜ            
 🏷️ ɴᴇᴋᴏ
@@ -48,17 +48,22 @@ export default class Command extends BaseCommand {
 🏷️ ᴍᴇɢᴜᴍɪᴘᴀᴘᴇʀ
 🏷️ ʜᴜsʙᴀɴᴅʀᴏ
 🏷️ sʜɪɴᴏʙᴜ-ᴘᴀᴘᴇʀ
+🏷️ ɢᴇɴsʜɪɴ ᴄʜᴀʀᴀᴄᴛᴇʀ
+🏷️ ᴀɴɪᴍᴇ ᴄʜᴀʀᴀᴄᴛᴇʀ
 
-🎐 *GENERAL* 🎐
+🎐 ɢᴇɴᴇʀᴀʟ 🎐
 
-🔷 ᴀᴅᴍɪɴs         
-🔷 ᴅᴇʟᴇᴛᴇ
-🔷 ᴇᴠᴇʀʏᴏɴᴇ       
-🔷 ᴍᴏᴅs
-🔷 ᴘʀᴏғɪʟᴇ        
-🔷 xᴘ
+♐ ᴀᴅᴍɪɴs         
+♐ ᴅᴇʟᴇᴛᴇ
+♐ ᴇᴠᴇʀʏᴏɴᴇ       
+♐ ᴍᴏᴅs
+♐ ᴘʀᴏғɪʟᴇ        
+♐ xᴘ
+♐ ɢᴏᴏɢʟᴇ
+♐ ɪɴᴠɪᴛᴇ ʟɪɴᴋ
+♐ ʀᴇᴠᴏᴋᴇ
 
-🎼 *MEDIA* 🎼
+🎼 ᴍᴇᴅɪᴀ 🎼
 
 🎶 ʟʏʀɪᴄs      
 🎶 sᴘᴏᴛɪғʏ
@@ -67,14 +72,18 @@ export default class Command extends BaseCommand {
 🎶 ʏᴛs         
 🎶 ᴘʟᴀʏ
 🎶 ᴘʟᴀʏᴠ
+🎶 ssᴡᴇʙ
 
-📃 *MISC* 📃
+📃 ᴍɪsᴄ 📃
 
 ⛓️ ʜɪ          
 ⛓️ ʀᴇᴛʀɪᴇᴠᴇ
-      
+⛓️ ᴄʀʏᴘᴛᴏ
+⛓️ ɢɪᴛʜᴜʙ  
+⛓️ ᴡᴇᴀᴛʜᴇʀ
+⛓️ᴇʟᴇᴍᴇɴᴛ
 
-📯 *MODERATION* 📯
+📯 ᴍᴏᴅᴇʀᴀᴛɪᴏɴ 📯
 
 📍ᴀᴄᴛɪᴠᴀᴛᴇ     
 📍ᴄʟᴏsᴇ
@@ -84,8 +93,9 @@ export default class Command extends BaseCommand {
 📍ᴘᴜʀɢᴇ
 📍ᴘʀᴏᴍᴏᴛᴇ       
 📍ʀᴇᴍᴏᴠᴇ
+📍ɢʀᴏᴜᴘ ᴄʜᴀɴɢᴇ
 
-⚠️ *NSFW* ⚠️
+⚠️ ɴsғᴡ ⚠️
 
 🀄 ʙʟᴏᴡᴊᴏʙ    
 🀄 ɴsғᴡᴊᴏᴋᴇ
@@ -93,7 +103,7 @@ export default class Command extends BaseCommand {
 🀄 ᴛʀᴀᴘ
 🀄 ɴsғᴡ-ᴡᴀɪғᴜ
 
-🎭 *REACTIONS* 🎭
+🎭 ʀᴇᴀᴄᴛɪᴏɴs 🎭
 
 🎗️ ʙɪᴛᴇ        
 🎗️ ʜɪɢʜғɪᴠᴇ
@@ -122,16 +132,23 @@ export default class Command extends BaseCommand {
 🎗️ ᴡɪɴᴋ        
 🎗️ ʏᴇᴇᴛ
 
-🪦 *UTILS* 🪦
+🪦 ᴜᴛɪʟs 🪦
 
 ⏳ ʙʟᴜʀ    
 ⏳ sᴛɪᴄᴋᴇʀ
 ⏳ sᴛᴇᴀʟ   
 ⏳ sᴜʙʀᴇᴅ
 
+🖥️ ᴅᴇᴠ 🖥️
 
+💻 ʙᴀɴ
+💻 ᴅɪsᴀʙʟᴇ
+💻 ᴇɴᴀʙʟᴇ
+💻 ᴇᴠᴀʟ
+💻 ʟᴇᴀᴠᴇ
+💻 sᴛᴀᴛᴜs
+💻 ᴜɴʙᴀɴ
  
-
 𝐈𝐜𝐡𝐢𝐠𝐨-𝐁𝐨𝐭𝐭𝐨©
 `
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
