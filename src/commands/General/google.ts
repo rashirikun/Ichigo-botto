@@ -76,7 +76,7 @@ export default class Command extends BaseCommand {
 
                 // return void M.reply(`🔍Command Used : ${Command.count} times\n Result for *${term}*\n\n\n ${result}`)
 
-                return void this.client.sendMessage(M.from,`🔍 Result for *${term}*\n\n\n ${result}`,MessageType.extendedText,{quoted:M.WAMessage,contextInfo: {
+                return void this.client.sendMessage(M.from,`🔍 Result for *${term}*\n\n\n ${result}`,{quoted:M.WAMessage,contextInfo: {
     externalAdReply: {
            title:`Google search-${term}`,
           body: `searched by Pratyush`,
