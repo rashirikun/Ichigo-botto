@@ -31,7 +31,7 @@ export default class EventHandler {
             mentionedJid: event.actor ? [...event.participants, event.actor] : event.participants
         }
         if (add) {
-            let image = (await request.buffer('https://i.pinimg.com/originals/9a/f4/0a/9af40a579d935b60ace8d9e258508eab.png') || this.client.assets.get('404.png')
+            let image = (await request.buffer('https://i.pinimg.com/originals/9a/f4/0a/9af40a579d935b60ace8d9e258508eab.png') || this.client.assets.get('404.png'))
             if (image)
                 return void (await this.client.sendMessage(event.jid, image, MessageType.image, {
                     caption: text,
