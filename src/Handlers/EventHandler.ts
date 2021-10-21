@@ -1,10 +1,7 @@
-import { MessageType, WAParticipantAction, Mimetype } from '@adiwajshing/baileys'
+import { MessageType, WAParticipantAction } from '@adiwajshing/baileys'
 import chalk from 'chalk'
-import request from './lib/request'
-import WAClient from './lib/WAClient'
-import { join } from 'path'
-import MessageHandler from './MessageHandler'
-import BaseCommand from './lib/BaseCommand'
+import request from '../lib/request'
+import WAClient from '../lib/WAClient'
 
 export default class EventHandler {
     constructor(public client: WAClient) {}
