@@ -32,7 +32,10 @@ export default class EventHandler {
             mentionedJid: event.actor ? [...event.participants, event.actor] : event.participants
         }
         if (add) {
-            let image = (await this.client.assets.get('welcome.png') || this.client.assets.get('404.png'))
+             const n = [
+                './assets/welcome.png'
+            ]
+            let image = n[Math.floor(Math.random() * n.length)]
             if (image)
                 return void (await this.client.sendMessage(event.jid, image, MessageType.image, {
                     caption: text,
