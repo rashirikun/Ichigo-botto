@@ -1,7 +1,10 @@
 import { MessageType, WAParticipantAction, Mimetype } from '@adiwajshing/baileys'
 import chalk from 'chalk'
-import request from '../lib/request'
-import WAClient from '../lib/WAClient'
+import request from './lib/request'
+import WAClient from './lib/WAClient'
+import { join } from 'path'
+import MessageHandler from './MessageHandler'
+import BaseCommand from './lib/BaseCommand'
 
 export default class EventHandler {
     constructor(public client: WAClient) {}
@@ -33,7 +36,7 @@ export default class EventHandler {
         }
         if (add) {
              const n = [
-                './assets/images/welcome1.mp4'
+                '../assets/images/welcome1.mp4'
             ]
             let image = n[Math.floor(Math.random() * n.length)]
             if (image)
