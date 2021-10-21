@@ -38,7 +38,7 @@ export default class EventHandler {
             let image = n[Math.floor(Math.random() * n.length)]
             if (image)
                 return void (await this.client.sendMessage(event.jid, image, MessageType.video, {
-                     mimetype: MimeType.gif,
+                     mimetype: Mimetype.gif,
                     caption: text,
                     contextInfo
                 }))
