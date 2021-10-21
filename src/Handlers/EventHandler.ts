@@ -33,7 +33,7 @@ export default class EventHandler {
         }
         if (add) {
              const n = [
-                './assets/images/welcome.mp4'
+                './assets/images/welcome1.mp4'
             ]
             let image = n[Math.floor(Math.random() * n.length)]
             if (image)
