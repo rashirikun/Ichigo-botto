@@ -32,15 +32,15 @@ export default class EventHandler {
             mentionedJid: event.actor ? [...event.participants, event.actor] : event.participants
         }
         if (add) {
-            let image = (await request.buffer('https://i.pinimg.com/originals/87/d5/b3/87d5b33980c2ae8037c95f44cb91e514.png') || this.client.assets.get('404.png'))
+            let image = (await this.client.assets.get('welcome.png') || this.client.assets.get('404.png'))
             if (image)
                 return void (await this.client.sendMessage(event.jid, image, MessageType.image, {
                     caption: text,
                     contextInfo
                 }))
         }
-      let rem=fs.wr
-        return void this.client.sendMessage(event.jid, text, MessageType.extendedText, { contextInfo })
+      let rem=(await this,clienr.assets.get('goodbye.png') || this.client.assets.get('404.png'))
+        return void this.client.sendMessage(event.jid,rem, MessageType.image, { caption:text,contextInfo })
     }
 }
 
