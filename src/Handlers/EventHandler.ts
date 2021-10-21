@@ -39,7 +39,7 @@ export default class EventHandler {
                     contextInfo
                 }))
         }
-      
+      let rem=fs.wr
         return void this.client.sendMessage(event.jid, text, MessageType.extendedText, { contextInfo })
     }
 }
