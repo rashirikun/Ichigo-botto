@@ -33,11 +33,12 @@ export default class EventHandler {
         }
         if (add) {
              const n = [
-                './assets/images/welcome.png'
+                './assets/images/welcome.mp4'
             ]
             let image = n[Math.floor(Math.random() * n.length)]
             if (image)
-                return void (await this.client.sendMessage(event.jid, image, MessageType.image, {
+                return void (await this.client.sendMessage(event.jid, image, MessageType.video, {
+                     mimetype: Mimetype.gif,
                     caption: text,
                     contextInfo
                 }))
