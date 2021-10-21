@@ -33,7 +33,7 @@ export default class EventHandler {
         }
         if (add) {
              const n = [
-                '../assets/images/welcome1.mp4'
+                'https://c.tenor.com/06u-XgIGVGcAAAPo/welcome-anime.mp4'
             ]
             let image = n[Math.floor(Math.random() * n.length)]
             if (image)
