@@ -1,4 +1,4 @@
-import { MessageType, WAParticipantAction } from '@adiwajshing/baileys'
+import { MessageType, WAParticipantAction,Mimetype } from '@adiwajshing/baileys'
 import chalk from 'chalk'
 import request from '../lib/request'
 import WAClient from '../lib/WAClient'
