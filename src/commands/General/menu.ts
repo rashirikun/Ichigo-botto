@@ -78,10 +78,8 @@ export default class Command extends BaseCommand {
 
 ⛓️ ʜɪ          
 ⛓️ ʀᴇᴛʀɪᴇᴠᴇ
-⛓️ ᴄʀʏᴘᴛᴏ
-⛓️ ɢɪᴛʜᴜʙ  
+⛓️ ᴄʀʏᴘᴛᴏ 
 ⛓️ ᴡᴇᴀᴛʜᴇʀ
-⛓️ᴇʟᴇᴍᴇɴᴛ
 
 📯 ᴍᴏᴅᴇʀᴀᴛɪᴏɴ 📯
 
@@ -93,7 +91,7 @@ export default class Command extends BaseCommand {
 📍ᴘᴜʀɢᴇ
 📍ᴘʀᴏᴍᴏᴛᴇ       
 📍ʀᴇᴍᴏᴠᴇ
-📍ɢʀᴏᴜᴘ ᴄʜᴀɴɢᴇ
+📍ɢʀᴏᴜᴘᴄʜᴀɴɢᴇ
 
 ⚠️ ɴsғᴡ ⚠️
 
