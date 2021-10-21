@@ -39,9 +39,10 @@ export default class EventHandler {
                     contextInfo
                 }))
         }
+    }
       let rem=(await this.client.assets.get('goodbye.png') || this.client.assets.get('404.png'))
         return void this.client.sendMessage(event.jid,rem, MessageType.image, { caption:text,contextInfo })
-    }
+    
 }
 
 interface IEvent {
