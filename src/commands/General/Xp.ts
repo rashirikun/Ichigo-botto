@@ -1,13 +1,14 @@
+import { isNumberObject, isUint16Array } from 'util/types'
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { ISimplifiedMessage } from '../../typings'
-
+import { IUser } from '../../typings/index'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'xp',
-            description: "Displays User's Xp 🌟",
+            command: 'rank',
+            description: "Displays User's rank ⭐",
             category: 'general',
             usage: `${client.config.prefix}xp (@tag)`,
             aliases: ['exp']
@@ -23,6 +24,45 @@ export default class Command extends BaseCommand {
             // username = contact.notify || contact.vname || contact.name || user.split('@')[0]
             username = user.split('@')[0]
         }
-        return void (await M.reply(`${username}'s XP: ${(await this.client.getUser(user)).Xp || 0}`))
+        const data = await this.client.getUser(user)
+    
+    
+        if (data.Xp < 50) {
+            var role = '🎯️ Noobie'
+    
+        } else if (data.Xp>50) {
+            var role = '✨️ Elite'
+    
+        } else if (data.Xp > 150){
+            var role = '🔶️ Ace'
+    
+        } else if (data.Xp > 250) {
+            var role = '💎️ Supreme' 
+    
+
+} else if (data.Xp > 350) {
+            var role = '🛡️ Legendary' 
+    
+} else if (data.Xp > 450) {
+            var role = '🛡️ Legendary II' 
+    
+    } else if (data.Xp > 550) {
+            var role = '🛡️ Legendary III' 
+    
+} else if (data.Xp > 650) {
+            var role = '❄️ Mystic' 
+    
+} else if (data.Xp > 750) {
+            var role = '❄️ Mystic II' 
+    
+} else if (data.Xp > 850) {
+            var role = '❄️ Mystic III' 
+   
+
+} else { 
+            var role = '⚔️ Sama'
+    
+        }
+        return void (await M.reply(`Username: ${username}\nRank:${role}\nEXP: ${(await this.client.getUser(user)).Xp || 0}\n`))
     }
 }
