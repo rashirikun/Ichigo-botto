@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
             command: 'urbandictionary',
             aliases: ['ur'],
             description: 'Gives you the definition of the given word. ',
-            category: 'educative',
+            category: 'general',
             usage: `${client.config.prefix}ur [Word you want to search about]`,
             baseXp: 50
         })
