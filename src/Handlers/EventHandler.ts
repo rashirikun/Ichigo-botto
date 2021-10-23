@@ -65,7 +65,7 @@ export default class EventHandler {
         }
         if (add) {
             const image = this.client.assets.get('welcome1')
-            if (typeof image === 'string') image = await request.buffer(image)
+            
             if (image)
                 return void (await this.client.sendMessage(event.jid, image, MessageType.image, {
                     caption: text,
