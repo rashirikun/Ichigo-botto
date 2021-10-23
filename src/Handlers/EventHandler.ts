@@ -1,4 +1,4 @@
-import { MessageType, WAParticipantAction } from '@adiwajshing/baileys'
+import { MessageType, WAParticipantAction, Mimetype } from '@adiwajshing/baileys'
 import chalk from 'chalk'
 import request from '../lib/request'
 import WAClient from '../lib/WAClient'
@@ -31,11 +31,12 @@ export default class EventHandler {
             mentionedJid: event.actor ? [...event.participants, event.actor] : event.participants
         }
         if (add) {
-            let image = await this.client.assets.get('welcome')
+            let image = await this.client.assets.get('welcome1')
             
             if (image)
-                return void (await this.client.sendMessage(event.jid, image, MessageType.image, {
+                return void (await this.client.sendMessage(event.jid, image, MessageType.video, {
                     caption: text,
+                    mimetype: Mimetype.gif
                     contextInfo
                 }))
         }
