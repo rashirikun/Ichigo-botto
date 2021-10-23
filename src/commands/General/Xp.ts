@@ -27,36 +27,36 @@ export default class Command extends BaseCommand {
         const data = await this.client.getUser(user)
     
     
-        if (data.Xp < 50) {
+if (data.Xp <= 50) {
             var role = '🎯️ Noobie'
     
-        } else if (data.Xp>50) {
+        } else if (data.Xp>50 && data.Xp<=150) {
             var role = '✨️ Elite'
     
-        } else if (data.Xp > 150){
+        } else if (data.Xp > 150 && data.Xp<=250){
             var role = '🔶️ Ace'
     
-        } else if (data.Xp > 250) {
+        } else if (data.Xp > 250 && data.Xp<=350) {
             var role = '💎️ Supreme' 
     
 
-} else if (data.Xp > 350) {
+} else if (data.Xp > 350 && data.Xp<=450) {
             var role = '🛡️ Legendary' 
     
-} else if (data.Xp > 450) {
+} else if (data.Xp > 450 && data.Xp<=550) {
             var role = '🛡️ Legendary II' 
     
-    } else if (data.Xp > 550) {
+    } else if (data.Xp > 550 && data.Xp<=650) {
             var role = '🛡️ Legendary III' 
     
-} else if (data.Xp > 650) {
+} else if (data.Xp > 650 && data.Xp<=750) {
             var role = '❄️ Mystic' 
     
-} else if (data.Xp > 750) {
+} else if (data.Xp > 750 && data.Xp<=850) {
             var role = '❄️ Mystic II' 
     
-} else if (data.Xp > 850) {
-            var role = '❄️ Mystic III' 
+} else if (data.Xp > 850 && data.Xp<=950) {
+        var role = '❄️ Mystic III' 
    
 
 } else { 
