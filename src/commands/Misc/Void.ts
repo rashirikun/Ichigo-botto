@@ -8,7 +8,7 @@ import { IPackage, ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'void',
+            command: 'ichigo',
             description: 'Displays the info',
             category: 'misc',
             usage: `${client.config.prefix}void`
@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
         // eslint-disable-next-line @typescript-eslint/no-var-requires
         const pkg: IPackage = require(join(__dirname, '..', '..', '..', 'package.json'))
-        const image = this.client.assets.get('void')
+        const image = this.client.assets.get('hmm')
         if (!image) return void null
         return void M.reply(
             image,
