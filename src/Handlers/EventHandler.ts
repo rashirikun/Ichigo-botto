@@ -64,7 +64,7 @@ export default class EventHandler {
             mentionedJid: event.actor ? [...event.participants, event.actor] : event.participants
         }
         if (add) {
-            const image = this.client.assets.get('hmm')
+            const image = this.client.assets.get('welcome1')
             if (typeof image === 'string') image = await request.buffer(image)
             if (image)
                 return void (await this.client.sendMessage(event.jid, image, MessageType.image, {
