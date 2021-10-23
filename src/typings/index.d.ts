@@ -21,6 +21,7 @@ export interface IParsedArgs {
 
 export interface IExtendedGroupMetadata extends WAGroupMetadata {
     admins?: string[]
+    participants?:string
 }
 
 export interface ISession {
