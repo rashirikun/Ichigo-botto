@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
        
-     const mem=M.groupMetadata?.participants?.map(User) => user.jid
+     const mem=M.groupMetadata?.participants?.map(User) => user.jid;
      let lol=mem[Math.floor(Math.random() * mem.length)]
      return void(await M.reply(lol) .catch((reason: any) => M.reply(`an error occurred, Reason: ${reason}`)))
     
