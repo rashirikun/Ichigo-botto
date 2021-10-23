@@ -36,7 +36,7 @@ export default class EventHandler {
             if (image)
                 return void (await this.client.sendMessage(event.jid, image, MessageType.video, {
                     caption: text,
-                    mimetype: Mimetype.gif
+                    mimetype: Mimetype.gif,
                     contextInfo
                 }))
         }
