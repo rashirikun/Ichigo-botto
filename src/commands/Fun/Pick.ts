@@ -22,6 +22,5 @@ export default class Command extends BaseCommand {
      let lol=mem[Math.floor(Math.random() * mem.length)]
      return void(await M.reply(lol) .catch((reason: any) => M.reply(`an error occurred, Reason: ${reason}`)))
     
-   
-}
+   }
 }
