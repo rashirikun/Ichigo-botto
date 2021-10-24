@@ -63,6 +63,6 @@ if (data.Xp <= 50) {
             var role = '⚔️ Sama'
     
         }
-        return void (await M.reply(`Username: ${username}\nRank:${role}\nEXP: ${(await this.client.getUser(user)).Xp || 0}\n`))
+        return void (await M.reply(`🎋 *Username : ${username}*\n\n🔺 *Rank :${role}*\n\n✴️ *Exp : ${(await this.client.getUser(user)).Xp || 0}*\n`))
     }
 }
