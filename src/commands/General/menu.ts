@@ -59,6 +59,7 @@ export default class Command extends BaseCommand {
 ♐ ɢᴏᴏɢʟᴇ
 ♐ ɪɴᴠɪᴛᴇ ʟɪɴᴋ
 ♐ ʀᴇᴠᴏᴋᴇ
+♐ ᴜʀʙᴀɴ ᴅɪᴄᴛɪᴏɴᴀʀʏ
 
 🎼 𝐌𝐄𝐃𝐈𝐀 🎼
 
