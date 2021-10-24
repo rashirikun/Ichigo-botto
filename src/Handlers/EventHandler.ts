@@ -42,7 +42,7 @@ export default class EventHandler {
         }
       
    
-        return void this.client.sendMessage(event.jid, text, MessageType.extendedtext,{ contextInfo })
+        return void this.client.sendMessage(event.jid, text, MessageType.extendedText,{ contextInfo })
     
 
 }
