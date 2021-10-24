@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/images/ichi/.mp4','./assets/images/ichi/mai2.mp4'
+            './assets/images/ichi/ichigo.mp4','./assets/images/ichi/ichigo2.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         const mn=`
