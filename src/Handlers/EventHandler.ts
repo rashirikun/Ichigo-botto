@@ -40,8 +40,8 @@ export default class EventHandler {
                     contextInfo
                 }))
         }
-     let img=await this.client.assets.get('goodbye')
-        return void this.client.sendMessage(event.jid, img, MessageType.image,         undefined,      undefined,{ caption: text, contextInfo })
+     let img=await this.client.assets.get('mai')
+        return void this.client.sendMessage(event.jid, img, MessageType.video,{ mimetype:Mimetype.gif,caption: text, contextInfo })
     }
 }
 
