@@ -1,5 +1,5 @@
 {
-  "name": "Ichigo-botto",
+  "name": "santana",
   "version": "1.0.0",
   "description": "A fully Object Oriented WhatsApp bot built with TypeScript",
   "main": "dist/void.js",
@@ -20,7 +20,7 @@
     "whatsapp",
     "whatsapp-botto"
   ],
-  "author": "Synthesized Infinity",
+  "author": "julin",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/Synthesized-Infinity/Whatsapp-Botto-Void/issues"
